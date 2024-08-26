@@ -58,6 +58,12 @@
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.2;
+  transition: margin-right 200ms linear;
+}
+.title:hover::after,
+.percentage:hover::after
+{
+  margin-right: 100px;
 }
 .price {
   font-size: 50px;
@@ -78,6 +84,7 @@
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.2;
+  transition: margin-right 200ms linear;
 }
 .img {
   width: 30px;
@@ -111,3 +118,4 @@
     rgba(22, 180, 165, 0.6699054621848739) 93%
   );
 }
+
