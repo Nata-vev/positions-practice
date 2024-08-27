@@ -46,6 +46,14 @@
   font-size: 25px;
   font-weight: 600;
 }
+.price {
+  font-size: 50px;
+}
+.percentage {
+  margin-top: 65px;
+  margin-bottom: 50px;
+  font-size: 21px;
+}
 .title::after {
   content: "";
   display: inline-block;
@@ -62,14 +70,6 @@
 .title:hover::after,
 .percentage:hover::after {
   margin-right: 100px;
-}
-.price {
-  font-size: 50px;
-}
-.percentage {
-  margin-top: 65px;
-  margin-bottom: 50px;
-  font-size: 21px;
 }
 .percentage::after {
   content: "";
@@ -90,7 +90,10 @@
   left: 82%;
   bottom: 75%;
 }
-.color-red {
+.section,
+.card-one,
+.radius,
+.relative:nth-child(3n+1){
   background: linear-gradient(
     90deg,
     rgba(250, 164, 110, 1) 0%,
@@ -98,7 +101,10 @@
     rgba(204, 39, 58, 0.8603816526610644) 86%
   );
 }
-.color-blue {
+.section,
+.card-two,
+.radius,
+.relative:nth-child(3n+2){
   background: linear-gradient(
     90deg,
     rgba(75, 174, 232, 1) 15%,
@@ -107,7 +113,10 @@
     rgba(23, 34, 223, 0.865983893557423) 93%
   );
 }
-.color-green {
+.section,
+.card-three,
+.radius,
+.relative:nth-child(3n+3){
   background: linear-gradient(
     90deg,
     rgba(95, 224, 186, 1) 19%,
@@ -116,4 +125,3 @@
     rgba(22, 180, 165, 0.6699054621848739) 93%
   );
 }
-
