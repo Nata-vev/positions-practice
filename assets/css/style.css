@@ -5,124 +5,98 @@
 }
 :root {
   color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:  sans-serif;
 }
-.section {
-  display: inline-block;
-  width: 500px;
-  min-height: 10vh;
-  padding: 20px;
-  margin: 10px;
-  text-align: left;
-  overflow: hidden;
-  overflow-x: hidden;
-}
-.card-one {
-  margin-right: 80px;
-}
-.card-two {
-  margin-left: 80px;
-}
-.card-three {
-  margin-left: 150px;
-}
-.relative {
+
+.card{
+  display:inline-block;
   position: relative;
-}
-.absolute {
-  position: absolute;
-}
-.radius {
+  width: 500px;
+  min-height: 300px;
+  padding: 50px;
+  margin: 20px;
   border-radius: 10px;
 }
-.text {
-  font-weight: bold;
-  text-indent: 40px;
-}
-.title {
-  position: relative;
-  margin: 40px 0 30px 0;
+
+.title{
+  margin-bottom: 40px;
   font-size: 25px;
-  font-weight: 600;
 }
-.price {
+.numbers {
   font-size: 50px;
-}
-.percentage {
-  margin-top: 65px;
   margin-bottom: 50px;
-  font-size: 21px;
 }
-.title::after {
+.text {
+  font-weight: bolder;
+}
+.percentage{
+font-size: 21px;
+}
+.card::before,
+.card::after{
   content: "";
   display: inline-block;
   position: absolute;
-  right: -100px;
-  top: -70px;
-  width: 240px;
-  height: 240px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.2;
   transition: margin-right 200ms linear;
 }
-.title:hover::after,
-.percentage:hover::after {
-  margin-right: 100px;
+.card::before{
+  right: -100px;
+  top: -30px;
+  width: 240px;
+  height: 240px;
 }
-.percentage::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
+
+.card::after{
   width: 280px;
   height: 280px;
   right: -40px;
-  bottom: -120px;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.2;
-  transition: margin-right 200ms linear;
+  bottom: -100px;
 }
-.img {
-  width: 30px;
-  height: 30px;
-  left: 82%;
-  bottom: 75%;
+.card:hover::before,
+.card:focus::before,
+.card:hover::after,
+.card:focus::after {
+  margin-right: 100px;
 }
 
-.section,
-.card-one,
-.radius,
-.relative:nth-child(3n+1){
-  background: linear-gradient(
-    90deg,
-    rgba(250, 164, 110, 1) 0%,
-    rgba(231, 105, 86, 0.9528186274509804) 35%,
-    rgba(204, 39, 58, 0.8603816526610644) 86%
-  );
-}
-.section,
-.card-two,
-.radius,
-.relative:nth-child(3n+2){
-  background: linear-gradient(
-    90deg,
-    rgba(75, 174, 232, 1) 15%,
-    rgba(73, 109, 249, 0.8071603641456583) 41%,
-    rgba(44, 57, 238, 0.9304096638655462) 60%,
-    rgba(23, 34, 223, 0.865983893557423) 93%
-  );
-}
-.section,
-.card-three,
-.radius,
-.relative:nth-child(3n+3){
-  background: linear-gradient(
-    90deg,
-    rgba(95, 224, 186, 1) 19%,
-    rgba(30, 181, 148, 1) 41%,
-    rgba(17, 173, 140, 0.8687850140056023) 61%,
-    rgba(22, 180, 165, 0.6699054621848739) 93%
-  );
-}
+.img {
+  position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 60px;
+    top: 60px;
+  }
+  .card:nth-child(3n+1){
+    background: linear-gradient(
+      90deg,
+      rgba(250, 164, 110, 1) 0%,
+      rgba(231, 105, 86, 0.9528186274509804) 35%,
+      rgba(204, 39, 58, 0.8603816526610644) 86%
+    );
+  }
+  .card:nth-child(3n+2){
+    background: linear-gradient(
+      90deg,
+      rgba(75, 174, 232, 1) 15%,
+      rgba(73, 109, 249, 0.8071603641456583) 41%,
+      rgba(44, 57, 238, 0.9304096638655462) 60%,
+      rgba(23, 34, 223, 0.865983893557423) 93%
+    );
+  }
+  .card:nth-child(3n){
+    background: linear-gradient(
+      90deg,
+      rgba(95, 224, 186, 1) 19%,
+      rgba(30, 181, 148, 1) 41%,
+      rgba(17, 173, 140, 0.8687850140056023) 61%,
+      rgba(22, 180, 165, 0.6699054621848739) 93%
+    );
+    } 
+
+
+
+
+
